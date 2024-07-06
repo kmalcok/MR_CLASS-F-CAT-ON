@@ -24,7 +24,7 @@ You can install the dependencies by running the following command:
 
 **1. Clone the repository:**
 
-- git clone <https://github.com/tolgaozkaya/IMR.git>
+- git clone 
 - cd IMR
 
 **2. Set up the virtual environment (optional but recommended):**
