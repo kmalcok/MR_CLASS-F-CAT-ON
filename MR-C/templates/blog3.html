@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blog1.css') }}">
+    <title>Brain Tumor Detection with YOLOv8</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="{{ url_for('static', filename='img/brainstorm.png') }}" alt="Logo"></a>
+            <h1>IMR</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('services') }}">Services</a></li>
+                <li><a href="{{ url_for('blogs') }}">Blog</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <div class="about-section">
+        <div class="container2">
+            <h1>Brain Tumor Detection with YOLOv8</h1>
+
+            <p>Recent advancements in the field of medicine have significantly improved diagnostic and treatment processes. 
+            Brain tumors can be a serious health issue if not detected early. In this blog post, we will discuss our project 
+            on brain tumor detection using the YOLOv8 model.</p>
+
+            <h2>About the Project</h2>
+            <p>This project aims to detect brain tumors using the YOLOv8 (You Only Look Once) model. YOLOv8 is a powerful deep 
+            learning algorithm used for real-time object detection. The model can accurately detect brain tumors in MRI images, 
+            providing healthcare professionals with fast and reliable diagnoses.</p>
+
+            <div style="text-align:center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/2009199_Understanding-Brain-Tumors-01.jpg?w=1155&amp;h=1887"
+                    style="width: 725px; height: 500px" alt="Brain Tumor Image">
+            </div>
+            <br>
+
+            <h2>YOLOv8 Model</h2>
+            <p>YOLOv8 is one of the latest models used for object detection. As the eighth version of the YOLO family, this model 
+            stands out with its high performance and fast processing capabilities. Customized for brain tumor detection, this model 
+            can successfully identify abnormal cell clusters in MRI images.</p>
+
+            <div style="text-align:center">
+                <img src="https://qph.cf2.quoracdn.net/main-qimg-3cd4287f29cd7fdc7f68ab223107bb64-pjlq"
+                    alt="MRI Scan Image">
+            </div>
+            <br>
+
+            <h2>Project Steps</h2>
+            <h3>1. Data Collection and Preparation</h3>
+            <p>The dataset used in this project consists of 3000 MRI images. Of these, 1500 do not contain brain tumors, while 
+            1500 do. The dataset was used during the training and validation stages of the model.</p>
+
+            <h3>2. Model Training</h3>
+            <p>The YOLOv8 model was trained on this dataset to detect brain tumors. During training, different hyperparameters and 
+            optimization techniques were used to achieve the highest accuracy.</p>
+
+            <h3>3. Model Integration</h3>
+            <p>The trained model was integrated into a Flask-based web application. This allows users to upload MRI images through 
+            the web interface to detect brain tumors. The user-friendly interface provides visual results and quick feedback.</p>
+
+            <h2>Results and Future Work</h2>
+            <p>The brain tumor detections made with the YOLOv8 model assist healthcare professionals with high accuracy rates. 
+            This project is a significant example of how artificial intelligence can be used in healthcare services. Future work 
+            will involve training the model on larger datasets and focusing on the detection of different types of brain tumors.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 footer-info">
+                        <h3>Intelligent Magnetic Resonance - IMR</h3>
+                        <p>Our mission is to provide disease detection services from accurate and reliable MR results
+                            using the latest technology.</p><br>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Üniversiteler Mah., ODTÜ Teknokent<br>
+                            Ankara, Çankaya 06800<br>
+                            Turkey<br>
+                            <strong>Phone:</strong> (0312) 268 32 35<br>
+                            <strong>Email:</strong> info@projectimr.com<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p>IMR &copy; 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/yourfontawesomekey.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
